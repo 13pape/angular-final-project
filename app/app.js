@@ -27,6 +27,10 @@
         templateUrl: "partials/map.html",
         controller: "MapCtrl"
       }).
+      when("/restaurant", {
+        templateUrl: "partials/restaurant.html",
+        controller: "RestCtrl"
+      }).
       otherwise({
         redirectTo: "/"
       });
