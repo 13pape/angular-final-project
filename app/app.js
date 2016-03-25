@@ -31,6 +31,10 @@
         templateUrl: "partials/restaurant.html",
         controller: "RestCtrl"
       }).
+      when("/add", {
+        templateUrl: "partials/addRestaurant.html",
+        controller: "AddRestCtrl"
+      }).
       otherwise({
         redirectTo: "/"
       });

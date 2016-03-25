@@ -26,17 +26,25 @@ app.controller("PageCtrl",
 
 $window.initMap = function(){
 	console.log('this is init map fn');
-	var latLang = new google.maps.LatLng(36.17, -86.77);
+	let latLang = new google.maps.LatLng(36.17, -86.77);
 
 
-  var mapOptions = {
+  let mapOptions = {
     center: latLang,
     zoom:10,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
 
-  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
+  let map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}   
+
+    // map.addListener('click', function(e) {
+    // console.log("hello");
+    //   let marker = new google.maps.Marker({
+    //     position: {lat: e.latLng.lat(), lng: e.latLng.lng()},
+    //     map: map
+    //   });
+    // });
 
   }
 ]);

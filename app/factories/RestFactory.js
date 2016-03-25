@@ -7,7 +7,7 @@ app.factory("RestFactory", ($q, $http) =>
 	      $http.get("https://mexicoapp.firebaseio.com/restaurants.json")
 	        .success(
 	          function (restaurantList) {
-	          	console.log("tomas y teo love them");
+	          	//console.log("tomas y teo love them");
 	          	resolve(restaurantList);
 	          },
 	          function (error) {
