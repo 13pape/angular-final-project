@@ -1,8 +1,15 @@
 <section class="text--small">
-  &lt;&lt; <a href="/#/">Back to Login</a>
-  <div>
-    <h1></h1>
-  </div>
+<header ng-include="'partials/nav.html'"></header>
 
-  <!-- <button ng-click="deleteSong()">Delete Restaurant</button> -->
+<div class="container">
+  <div class="col-sm-4" ng-repeat="restaurant in restaurants">
+    <div class="thumbnail">
+	    <img ng-src="{{restaurant.image}}"></img>
+	    <h3>{{restaurant.name}}</h3>
+	    <div>{{restaurant.description}}</div>
+	    <div>{{restaurant.address}}</div>
+	    <button ng-click="deleteSong()">Delete</button>
+	</div>
+  </div>
+ </div>
 </section>

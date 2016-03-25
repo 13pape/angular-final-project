@@ -1,17 +1,23 @@
 html, body { height: 100%; margin: 0; padding: 0; }
 
 #map { 
+	margin: 3%;
 	height: 500px; 
-	width: 700px;
-	
+	width: 1200px;
 }
 
 .visible {
 	display: none;
 }
 
-
-
 .initial-button {
 	margin: 2%;
 }
+
+#RListButton {
+	float: right;
+    margin: 0 100px 0px 200px;
+}
+
+
+
