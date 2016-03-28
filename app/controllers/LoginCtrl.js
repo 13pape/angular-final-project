@@ -49,6 +49,10 @@ app.controller("LoginCtrl",
       $(".visible").toggle();
         });
 
+    $scope.isAuthenticated = () => {
+      console.log("checking auth");
+      return authFactory.isAuthenticated();
+    };
 
   }
 ]);

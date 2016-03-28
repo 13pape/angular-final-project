@@ -1,5 +1,6 @@
 "use strict";
 
+
 app.factory("RestFactory", ($q, $http) => 
 
 	() =>
@@ -16,3 +17,6 @@ app.factory("RestFactory", ($q, $http) =>
 			)
 	    })
 );
+
+
+//get, post, put (edit), delete
