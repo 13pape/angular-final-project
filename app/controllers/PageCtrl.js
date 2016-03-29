@@ -25,88 +25,67 @@ app.controller("PageCtrl",
     };
 
 
-// $window.initMap = function(){
-// 	console.log('this is init map fn');
-// 	//let setMap = new google.maps.latLng(36.17, -86.77);
+    var map;
+    var markers = [];
+      var delMarkers = document.getElementById("deleteMarkers");
 
+      $window.initMap = function(){
+        var nashVille = {lat: 36.162480, lng: -86.785968};
 
-//   let mapOptions = {
-//     center: {lat:36.162480, lng:-86.785968},
-//     zoom:8,
-//     mapTypeId: google.maps.MapTypeId.ROADMAP
-//   };
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: nashVille,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
 
-//   let map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        // This event listener will call addMarker() when the map is clicked.
+        map.addListener('click', function(event) {
+          addMarker(event.latLng);
+        });
 
-  
-// }
+        // Adds a marker at the center of the map.
+        addMarker(nashVille);
+      }
 
-var map;
-var markers = [];
-var delMarkers = document.getElementById("deleteMarkers");
+      // Adds a marker to the map and push to the array.
+      function addMarker(location) {
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+        markers.push(marker);
+      }
 
-$window.initMap = function(){
-  var nashVille = {lat: 36.162480, lng: -86.785968};
+      // Sets the map on all markers in the array.
+      function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(map);
+        }
+      }
 
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: nashVille,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  });
+      // Removes the markers from the map, but keeps them in the array.
+      function clearMarkers() {
+        setMapOnAll(null);
+      }
 
-  // This event listener will call addMarker() when the map is clicked.
-  map.addListener('click', function(event) {
-    addMarker(event.latLng);
-  });
+      // Shows any markers currently in the array.
+      function showMarkers() {
+        setMapOnAll(map);
+      }
 
-  // Adds a marker at the center of the map.
-  addMarker(nashVille);
-}
+      // Deletes all markers in the array by removing references to them.
+      function deleteMarkers() {
+        clearMarkers();
+        markers = [];
+      }
 
-// Adds a marker to the map and push to the array.
-function addMarker(location) {
-  var marker = new google.maps.Marker({
-    position: location,
-    map: map
-  });
-  markers.push(marker);
-}
+      function addFirebaseMarkers() {
 
-// Sets the map on all markers in the array.
-function setMapOnAll(map) {
-  for (var i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-  }
-}
+      }
 
-// Removes the markers from the map, but keeps them in the array.
-function clearMarkers() {
-  setMapOnAll(null);
-}
-
-// Shows any markers currently in the array.
-function showMarkers() {
-  setMapOnAll(map);
-}
-
-// Deletes all markers in the array by removing references to them.
-function deleteMarkers() {
-  clearMarkers();
-  markers = [];
-}
-
-function addFirebaseMarkers() {
-  
-}
-
-delMarkers.addEventListener("click", function(){
-  deleteMarkers();
-})
-
-
-
-
-
+      delMarkers.addEventListener("click", function(){
+        deleteMarkers();
+      })
   }
 ]);
 
