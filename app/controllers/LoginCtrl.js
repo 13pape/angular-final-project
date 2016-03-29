@@ -44,7 +44,7 @@ app.controller("LoginCtrl",
       authFactory
         .authenticate($scope.account)
         .then(() => {
-          $location.path("/");
+          $location.path("/map");
           $scope.$apply();  // Needed for $location.path() to succeed
       $(".visible").toggle();
         });
