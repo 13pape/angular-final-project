@@ -8,11 +8,14 @@ app.factory("authFactory", (firebaseURL) => {
       Determine if the client is authenticated
      */
     isAuthenticated () {
+      console.log("isAuthenticated called");
       let authData = ref.getAuth();
 
       if (authData) {
+        console.log("yes, authdata", authData);
         return true;
       } else {
+        console.log("no authdata");
         return false;
       }
     },

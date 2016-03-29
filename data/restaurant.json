@@ -8,7 +8,7 @@
       "description": "Excellent tacos and salsa",
       "details": {
         "lat": 35.917630,
-        "long": -86.829804
+        "lng": -86.829804
       },
       "image":"data/images/LosPrimos.png"
     },
@@ -20,7 +20,7 @@
       "description": "Excellent service and margaritas",
       "details": {
         "lat": 35.915405,
-        "long": -86.839067
+        "lng": -86.839067
       },
       "image":"data/images/LaTerraza.png"
     },
@@ -32,7 +32,7 @@
       "description": "Delicious food, homemade tortillas",
       "details": {
         "lat": 36.048449,
-        "long": -86.710572
+        "lng": -86.710572
       },
       "image":"data/images/LasFogatas.png"
     },
@@ -44,7 +44,7 @@
       "description": "Best papusas",
       "details": {
         "lat": 36.067148,
-        "long": -86.718822
+        "lng": -86.718822
       },
       "image":"data/images/LasAmericas.png"
     },
@@ -56,7 +56,7 @@
       "description": "Good green salsa and homemade tortillas",
       "details": {
         "lat": 35.945278,
-        "long": -86.820214
+        "lng": -86.820214
       },
       "image":"data/images/Chuys.png"
     },
@@ -68,7 +68,7 @@
       "description": "Great Service and delicious Tacos al Pastor",
       "details": {
         "lat": 36.027003,
-        "long": -86.713440
+        "lng": -86.713440
       },
       "image":"data/images/ElSombrero.png"
     }

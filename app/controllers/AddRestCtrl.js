@@ -35,14 +35,14 @@ app.controller("AddRestCtrl",
           description: $scope.newRestaurant.description,
           details: {
             lat: $scope.newRestaurant.lat,
-            long: $scope.newRestaurant.long,
+            lng: $scope.newRestaurant.lng,
           },
           image: $scope.newRestaurant.image
         })
 
       // The $http.post() method returns a promise, so you can use then()
       ).then(
-        () => $location.url("partials/restaurant.html"), // Handle resolve
+        () => $location.url("#/restaurant.html"), // Handle resolve
         (response) => console.log(response)  // Handle reject
       );
     };
