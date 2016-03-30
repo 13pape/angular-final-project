@@ -51,7 +51,8 @@ app.controller("PageCtrl",
       function addMarker(location) {
         var marker = new google.maps.Marker({
           position: location,
-          map: map
+          map: map,
+          title: 'Hello World!'
         });
         markers.push(marker);
       }
