@@ -7,10 +7,14 @@
 	    <img ng-src="{{restaurant.image}}"></img>
 	    <h3>{{restaurant.name}}</h3>
 	    <div>{{restaurant.description}}</div>
-	    <div>{{restaurant.address}}</div>
+	    <div>{{restaurant.number}}</div>
+		<div>{{restaurant.street}}</div>
+		<div>{{restaurant.city}}</div>
+		<div>{{restaurant.state}}</div>
+      	<div>{{restaurant.zip}}</div>
 	    <a href="{{restaurant.url}}">go now</a>
 	    <button ng-click="deleteRestaurant(restaurant)">Delete</button>
-	<img ng-src="https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=AIzaSyAKo7bj3jnpsovP4u-HFvG8Mc1D2vCCR6M">
+		<img ng-src="https://maps.googleapis.com/maps/api/staticmap?&zoom=8&size=400x300&key=AIzaSyAKo7bj3jnpsovP4u-HFvG8Mc1D2vCCR6M&markers={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}">
 	</div>
   </div>
  </div>

@@ -4,73 +4,73 @@
       "id": 1,
       "name": "Los Primos",
       "type": "Mexican",
-      "address": "1203 Murfreesboro Rd Franklin,TN 37064",
+      "number": "1203",
+      "street": "Murfreesboro+Rd",
+      "city": "Franklin",
+      "state": "TN",
+      "zip": "37064",
       "description": "Excellent tacos and salsa",
-      "details": {
-        "lat": 35.917630,
-        "lng": -86.829804
-      },
       "image":"data/images/LosPrimos.png"
     },
     "two": {
       "id": 2,
       "name": "La Terraza",
       "type": "Mexican",
-      "address": "1010 Murfreesboro Rd Franklin,TN 37064",
+      "number": "1010",
+      "street": "Murfreesboro+Rd",
+      "city": "Franklin",
+      "state": "TN",
+      "zip": "37064",
       "description": "Excellent service and margaritas",
-      "details": {
-        "lat": 35.915405,
-        "lng": -86.839067
-      },
       "image":"data/images/LaTerraza.png"
     },
     "three":{
       "id": 3,
       "name": "Las Fogatas",
       "type": "Mexican",
-      "address": "5560 Nolensville Pike Nashville, TN 37211",
+      "number": "5560",
+      "street": "Nolensville+Pike",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37211",
       "description": "Delicious food, homemade tortillas",
       "url": "https://www.google.com/maps/place/Fogatas+Mexican+Restaurant+Inc/@36.0482109,-86.7127765,17z/data=!3m1!4b1!4m2!3m1!1s0x88646fd99b6bb327:0xd5de9f559a01d879",
-      "details": {
-        "lat": 36.048449,
-        "lng": -86.710572
-      },
       "image":"data/images/LasFogatas.png"
     },
     "four":{
       "id": 4,
       "name": "Las Americas",
       "type": "Mexican and El Salvador",
-      "address": "4715 Nolensville Pike Nashville, TN 37211",
+      "number": "4715",
+      "street": "Nolensville+Pike",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37211",
       "description": "Best papusas",
-      "details": {
-        "lat": 36.067148,
-        "lng": -86.718822
-      },
       "image":"data/images/LasAmericas.png"
     },
     "five":{
       "id": 5,
       "name": "Chuy's",
       "type": "Mexican",
-      "address": "3061 Mallory Ln Franklin, TN 37067",
+      "number": "3061",
+      "street": "Mallory+Ln",
+      "city": "Franklin",
+      "state": "TN",
+      "zip": "37067",
       "description": "Good green salsa and homemade tortillas",
-      "details": {
-        "lat": 35.945278,
-        "lng": -86.820214
-      },
       "image":"data/images/Chuys.png"
     },
     "six":{
       "id": 6, 
       "name": "El Sombrero",
       "type": "Mexican",
-      "address": "6017 Nolensville Pike Nashville, TN 37211",
+      "number": "6017",
+      "street": "Nolensville+Pike",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37211",
       "description": "Great Service and delicious Tacos al Pastor",
-      "details": {
-        "lat": 36.027003,
-        "lng": -86.713440
-      },
       "image":"data/images/ElSombrero.png"
     }
   }

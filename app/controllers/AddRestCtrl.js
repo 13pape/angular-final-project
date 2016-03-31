@@ -11,11 +11,12 @@ app.controller("AddRestCtrl",
     // Default property values for keys bound to input fields
     $scope.newRestaurant = {
       name: "",
-      type: "",
-      address: "",
       description: "",
-      lat: "",
-      long: "",
+      number: "",
+      street: "",
+      city: "",
+      state: "",
+      zip: "",
       image: "",
     };
 
@@ -30,13 +31,12 @@ app.controller("AddRestCtrl",
         // sending them to an API
         JSON.stringify({
           name: $scope.newRestaurant.name,
-          type: $scope.newRestaurant.type,
-          address: $scope.newRestaurant.address,
           description: $scope.newRestaurant.description,
-          details: {
-            lat: $scope.newRestaurant.lat,
-            lng: $scope.newRestaurant.lng,
-          },
+          number: $scope.newRestaurant.number,
+          street: $scope.newRestaurant.street,
+          city: $scope.newRestaurant.city,
+          state: $scope.newRestaurant.state,
+          zip: $scope.newRestaurant.zip,
           image: $scope.newRestaurant.image
         })
 
