@@ -10,6 +10,7 @@
       "state": "TN",
       "zip": "37064",
       "description": "Excellent tacos and salsa",
+      "url": "https://www.google.com/maps/place/Los+Primos+Mexican+Taqueria/@35.9173792,-86.8340441,16z/data=!4m2!3m1!1s0x88647e55684e3e3b:0x859d0b3ebdedbcf6",
       "image":"data/images/LosPrimos.png"
     },
     "two": {
@@ -22,6 +23,7 @@
       "state": "TN",
       "zip": "37064",
       "description": "Excellent service and margaritas",
+      "url": "https://www.google.com/maps/place/La+Terraza/@35.9154056,-86.8401521,18z/data=!4m2!3m1!1s0x88647f20f2652a0b:0xec4896b2f9554712",
       "image":"data/images/LaTerraza.png"
     },
     "three":{
@@ -47,6 +49,7 @@
       "state": "TN",
       "zip": "37211",
       "description": "Best papusas",
+      "url": "https://www.google.com/maps/place/Las+Americas+Pupuseria+Y+Taqueria/@36.0672695,-86.7211537,17z/data=!3m1!4b1!4m2!3m1!1s0x88646fbf0fc6541b:0xb7644bf40a5c5b6b",
       "image":"data/images/LasAmericas.png"
     },
     "five":{
@@ -59,6 +62,7 @@
       "state": "TN",
       "zip": "37067",
       "description": "Good green salsa and homemade tortillas",
+      "url": "https://www.google.com/maps/place/Chuy's+Cool+Springs/@35.9450352,-86.8223921,17z/data=!3m1!4b1!4m2!3m1!1s0x8864794c9210fa43:0xf0f1221e8e2a7e00",
       "image":"data/images/Chuys.png"
     },
     "six":{
@@ -71,6 +75,7 @@
       "state": "TN",
       "zip": "37211",
       "description": "Great Service and delicious Tacos al Pastor",
+      "url": "https://www.google.com/maps/place/EL+SOMBRERO+MEXICAN+RESTAURANT/@36.0267602,-86.7155639,17z/data=!3m1!4b1!4m2!3m1!1s0x886470384b88e639:0xbb28fed3e986bb54",
       "image":"data/images/ElSombrero.png"
     }
   }

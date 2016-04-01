@@ -2,8 +2,8 @@ html, body { height: 100%; margin: 0; padding: 0; }
 
 #map { 
 	margin: 3%;
-	height: 500px; 
-	width: 1200px;
+	height: 300px; 
+	width: 1000px;
 }
 
 .visible {

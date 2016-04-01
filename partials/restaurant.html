@@ -4,17 +4,14 @@
 <div class="container">
   <div class="col-sm-4" ng-repeat="restaurant in restaurants">
     <div class="thumbnail">
-	    <img ng-src="{{restaurant.image}}"></img>
+	    <img class="img-rounded" ng-src="https://maps.googleapis.com/maps/api/streetview?zoom=30&size=400x300&location={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}&fov=70&heading=260&pitch=10&key=AIzaSyALZPC8urkXiNe8MvB7S86gZwBCLlB24iQ">
 	    <h3>{{restaurant.name}}</h3>
-	    <div>{{restaurant.description}}</div>
-	    <div>{{restaurant.number}}</div>
-		<div>{{restaurant.street}}</div>
-		<div>{{restaurant.city}}</div>
-		<div>{{restaurant.state}}</div>
-      	<div>{{restaurant.zip}}</div>
-	    <a href="{{restaurant.url}}">go now</a>
-	    <button ng-click="deleteRestaurant(restaurant)">Delete</button>
-		<img ng-src="https://maps.googleapis.com/maps/api/staticmap?&zoom=8&size=400x300&key=AIzaSyAKo7bj3jnpsovP4u-HFvG8Mc1D2vCCR6M&markers={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}">
+	    <div>"{{restaurant.description}}"</div>
+	    <div>{{restaurant.number}} {{restaurant.street}}</div>
+		<div>{{restaurant.city}}, {{restaurant.state}}. {{restaurant.zip}}</div>
+		<img ng-src="https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&key=AIzaSyAKo7bj3jnpsovP4u-HFvG8Mc1D2vCCR6M&markers={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}">
+		<a href="{{restaurant.url}}">go now</a>
+		<button ng-click="deleteRestaurant(restaurant)" class="btn btn-default" type="button">Delete</button>
 	</div>
   </div>
  </div>

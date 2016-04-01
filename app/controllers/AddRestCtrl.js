@@ -17,7 +17,6 @@ app.controller("AddRestCtrl",
       city: "",
       state: "",
       zip: "",
-      image: "",
     };
 
     // Function bound to the Add Restaurant button in the view template
@@ -37,7 +36,7 @@ app.controller("AddRestCtrl",
           city: $scope.newRestaurant.city,
           state: $scope.newRestaurant.state,
           zip: $scope.newRestaurant.zip,
-          image: $scope.newRestaurant.image
+          url: $scope.newRestaurant.url,
         })
 
       // The $http.post() method returns a promise, so you can use then()
