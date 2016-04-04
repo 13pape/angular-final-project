@@ -14,8 +14,8 @@
 <div ng-app="MexicoApp">
     <div ng-controller="PageCtrl">
       <div id="map"></div>
+      <input id="pac-input"></input>
       <div ng-view></div>
-      <input id="deleteMarkers" type="button" value="Delete Markers"></input>
     </div> 
 </div>
 
@@ -34,9 +34,10 @@
   <script src="app/controllers/RestCtrl.js"></script>
   <script src="app/controllers/LoginCtrl.js"></script>
   <script src="app/controllers/AddRestCtrl.js"></script>
+  <!-- // <script src="app/filters/RestFilter.js"></script> -->
 
   <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ2WYlkPOSmUTacrdXTTTJ1RX0jPeaIN4&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false?key=AIzaSyBJ2WYlkPOSmUTacrdXTTTJ1RX0jPeaIN4&callback=initMap">
     </script>
 </body>
 </html>

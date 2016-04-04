@@ -2,17 +2,49 @@
 <header ng-include="'partials/nav.html'"></header>
 
 <div class="container">
-  <div class="col-sm-4" ng-repeat="restaurant in restaurants">
-    <div class="thumbnail">
-	    <img class="img-rounded" ng-src="https://maps.googleapis.com/maps/api/streetview?zoom=30&size=400x300&location={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}&fov=70&heading=260&pitch=10&key=AIzaSyALZPC8urkXiNe8MvB7S86gZwBCLlB24iQ">
-	    <h3>{{restaurant.name}}</h3>
-	    <div>"{{restaurant.description}}"</div>
-	    <div>{{restaurant.number}} {{restaurant.street}}</div>
-		<div>{{restaurant.city}}, {{restaurant.state}}. {{restaurant.zip}}</div>
-		<img ng-src="https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&key=AIzaSyAKo7bj3jnpsovP4u-HFvG8Mc1D2vCCR6M&markers={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}">
-		<a href="{{restaurant.url}}">go now</a>
-		<button ng-click="deleteRestaurant(restaurant)" class="btn btn-default" type="button">Delete</button>
+	<div class="col-sm-12">
+		<div class="input-group container-fluid">
+			<span class="input-group-addon">Type of food</span>
+			<select name="typeFood" ng-model="typeFoodRest" class="form-control">
+				<option value="all">All</option>
+				<option value="mexican">Mexican</option>
+				<option value="korean">Korean</option>
+				<option value="american">American</option>
+				<option value="thai">Thai</option>
+			</select>
+		</div>
 	</div>
-  </div>
- </div>
+</div>
+<br><br><br>
+<div>
+	<div class="col-sm-4" ng-repeat="restaurant in restaurants">
+	    <div class="thumbnail">
+	    <button ng-click="deleteRestaurant(restaurant)" 
+							class="glyphicon glyphicon-remove" 
+							type="button"></button>
+		    <img class="img-rounded" ng-src="https://maps.googleapis.com/maps/api/streetview?zoom=30&size=400x300&location={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}&fov=70&heading=260&pitch=10&key=AIzaSyALZPC8urkXiNe8MvB7S86gZwBCLlB24iQ">
+		    
+			    <h3 class="glyphicon glyphicon-cutlery"> {{restaurant.name}}</h3>
+			    <br>
+			    <div class="glyphicon glyphicon-pencil"> "{{restaurant.description}}"</div> <br>
+			    <div class="glyphicon glyphicon-star"> {{restaurant.rating}}</div>
+			    <div ng-show="showDetails === true">
+				    <div> {{restaurant.number}} {{restaurant.street}}</div>
+					<div>{{restaurant.city}}, {{restaurant.state}}. {{restaurant.zip}}</div>
+					<img class="img-rounded" ng-src="https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=267x200&key=AIzaSyAKo7bj3jnpsovP4u-HFvG8Mc1D2vCCR6M&markers={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}">
+					<a href="{{restaurant.url}}" class="glyphicon glyphicon-map-marker"></a>
+				
+					<button class="btn btn-default" type="button" 
+						ng-show="showDetails === true"
+						ng-click="showDetails = !showDetails">
+						Close</button>
+				</div> <br> 
+			<button class="btn btn-default glyphicon glyphicon-road" type="button" 
+							ng-hide="showDetails === true" 
+							ng-click="showDetails = !showDetails"></button>
+			
+	  </div>
+	</div>
+</div>
+ 
 </section>
