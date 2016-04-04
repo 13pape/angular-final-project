@@ -6,7 +6,7 @@
 		<div class="input-group container-fluid">
 			<span class="input-group-addon">Type of food</span>
 			<select name="typeFood" ng-model="typeFoodRest" class="form-control">
-				<option value="all">All</option>
+				<option value="">All</option>
 				<option value="mexican">Mexican</option>
 				<option value="korean">Korean</option>
 				<option value="american">American</option>
@@ -17,12 +17,12 @@
 </div>
 <br><br><br>
 <div>
-	<div class="col-sm-4" ng-repeat="restaurant in restaurants">
+	<div class="col-sm-4" ng-repeat="restaurant in restaurants | filter:typeFoodRest">
 	    <div class="thumbnail">
 	    <button ng-click="deleteRestaurant(restaurant)" 
 							class="glyphicon glyphicon-remove" 
 							type="button"></button>
-		    <img class="img-rounded" ng-src="https://maps.googleapis.com/maps/api/streetview?zoom=30&size=400x300&location={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}&fov=70&heading=260&pitch=10&key=AIzaSyALZPC8urkXiNe8MvB7S86gZwBCLlB24iQ">
+		    <img class="img-rounded" ng-src="https://maps.googleapis.com/maps/api/streetview?zoom=30&size=400x300&location={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}&fov=90&pitch=0&key=AIzaSyALZPC8urkXiNe8MvB7S86gZwBCLlB24iQ">
 		    
 			    <h3 class="glyphicon glyphicon-cutlery"> {{restaurant.name}}</h3>
 			    <br>
@@ -32,7 +32,7 @@
 				    <div> {{restaurant.number}} {{restaurant.street}}</div>
 					<div>{{restaurant.city}}, {{restaurant.state}}. {{restaurant.zip}}</div>
 					<img class="img-rounded" ng-src="https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=267x200&key=AIzaSyAKo7bj3jnpsovP4u-HFvG8Mc1D2vCCR6M&markers={{restaurant.name}}+{{restaurant.number}}+{{restaurant.street}},+{{restaurant.city}},+{{restaurant.state}}+{{restaurant.zip}}">
-					<a href="{{restaurant.url}}" class="glyphicon glyphicon-map-marker"></a>
+					<a target="_blank" href="{{restaurant.url}}" class="glyphicon glyphicon-map-marker"></a>
 				
 					<button class="btn btn-default" type="button" 
 						ng-show="showDetails === true"

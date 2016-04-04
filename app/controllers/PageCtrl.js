@@ -14,6 +14,7 @@ app.controller("PageCtrl",
 
     // Local variables
     let ref = new Firebase(firebaseURL);
+    let nashVille = {lat: 36.162480, lng: -86.785968}
 
     $scope.isAuthenticated = () => {
       return authFactory.isAuthenticated();
@@ -24,18 +25,18 @@ app.controller("PageCtrl",
       ref.unauth();
     };
 
-
     var map;
     var SearchBox;
       $window.initMap = function(){
-        var nashVille = {lat: 36.162480, lng: -86.785968};
+        //var nashVille = {lat: 36.162480, lng: -86.785968};
 
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           center: nashVille,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         });
-      
+
+
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
         var searchBox = new google.maps.places.SearchBox(input);
@@ -90,8 +91,8 @@ app.controller("PageCtrl",
             });
             map.fitBounds(bounds);
       });
-
   }
+
 }
 ]);
 
