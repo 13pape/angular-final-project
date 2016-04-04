@@ -36,6 +36,7 @@ app.controller("PageCtrl",
           mapTypeId: google.maps.MapTypeId.ROADMAP
         });
 
+        
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
@@ -95,4 +96,12 @@ app.controller("PageCtrl",
 
 }
 ]);
+
+
+  
+
+
+
+
+
 
