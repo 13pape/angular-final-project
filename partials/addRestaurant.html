@@ -1,0 +1,21 @@
+<section class="text--small">
+	<header ng-include="'partials/nav.html'"></header>
+	<div class="container">
+		<div class="thumbnail">
+			<section>
+			  <h1>New Restaurant</h1>
+			  	<div>name: <input type="text" ng-model="newRestaurant.name"/></div>
+			  	<div>type: <input type="text" ng-model="newRestaurant.type"/></div>
+			  	<div>description: <input type="text" ng-model="newRestaurant.description"/></div>
+				<div>rating: <input type="text" ng-model="newRestaurant.rating"/></div>
+			  	<div>number: <input type="text" ng-model="newRestaurant.number"/></div>
+			  	<div>street: <input type="text" ng-model="newRestaurant.street"/></div>
+			  	<div>city: <input type="text" ng-model="newRestaurant.city"/></div>
+			  	<div>state: <input type="text" ng-model="newRestaurant.state"/></div>
+			  	<div>zip: <input type="text" ng-model="newRestaurant.zip"/></div>
+			  	<div>url: <input type="text" ng-model="newRestaurant.url"/></div>
+			 	<a class="btn btn-default" href="#/restaurant" role="button" ng-click="addRestaurant()">Add</a>
+			</section>
+		</div>
+	</div>
+</section>
