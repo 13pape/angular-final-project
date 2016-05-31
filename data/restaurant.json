@@ -1,0 +1,82 @@
+{
+  "restaurants": {
+    "one": {
+      "id": 1,
+      "name": "Los Primos",
+      "type": "Mexican",
+      "number": "1203",
+      "street": "Murfreesboro+Rd",
+      "city": "Franklin",
+      "state": "TN",
+      "zip": "37064",
+      "description": "Excellent tacos and salsa",
+      "rating": 10,
+      "url": "https://www.google.com/maps/place/Los+Primos+Mexican+Taqueria/@35.9174741,-86.8298043,15z/data=!4m2!3m1!1s0x0:0x859d0b3ebdedbcf6"
+    },
+    "two": {
+      "id": 2,
+      "name": "La Terraza",
+      "type": "Mexican",
+      "number": "1010",
+      "street": "Murfreesboro+Rd",
+      "city": "Franklin",
+      "state": "TN",
+      "zip": "37064",
+      "description": "Excellent service and margaritas",
+      "rating": 7,
+      "url": "https://www.google.com/maps/place/La+Terraza/@35.9154056,-86.8401521,18z/data=!4m2!3m1!1s0x88647f20f2652a0b:0xec4896b2f9554712"
+    },
+    "three":{
+      "id": 3,
+      "name": "Las Fogatas",
+      "type": "Mexican",
+      "number": "5560",
+      "street": "Nolensville+Pike",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37211",
+      "description": "Delicious food, homemade tortillas",
+      "rating": 9,
+      "url": "https://www.google.com/maps/place/Fogatas+Mexican+Restaurant+Inc/@36.0482109,-86.7127765,17z/data=!3m1!4b1!4m2!3m1!1s0x88646fd99b6bb327:0xd5de9f559a01d879"
+    },
+    "four":{
+      "id": 4,
+      "name": "Las Americas",
+      "type": "Mexican and El Salvador",
+      "number": "4715",
+      "street": "Nolensville+Pike",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37211",
+      "description": "Best papusas",
+      "rating": 9,
+      "url": "https://www.google.com/maps/place/Las+Americas+Pupuseria+Y+Taqueria/@36.0672695,-86.7211537,17z/data=!3m1!4b1!4m2!3m1!1s0x88646fbf0fc6541b:0xb7644bf40a5c5b6b"
+    },
+    "five":{
+      "id": 5,
+      "name": "Chuy's",
+      "type": "Mexican",
+      "number": "3061",
+      "street": "Mallory+Ln",
+      "city": "Franklin",
+      "state": "TN",
+      "zip": "37067",
+      "description": "Good green salsa and homemade tortillas",
+      "rating": 7,
+      "url": "https://www.google.com/maps/place/Chuy's+Cool+Springs/@35.9450352,-86.8223921,17z/data=!3m1!4b1!4m2!3m1!1s0x8864794c9210fa43:0xf0f1221e8e2a7e00"
+    },
+    "six":{
+      "id": 6, 
+      "name": "El Sombrero",
+      "type": "Mexican",
+      "number": "6017",
+      "street": "Nolensville+Pike",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37211",
+      "rating": 7,
+      "description": "Great Service and delicious Tacos al Pastor",
+      "url": "https://www.google.com/maps/place/EL+SOMBRERO+MEXICAN+RESTAURANT/@36.0267602,-86.7155639,17z/data=!3m1!4b1!4m2!3m1!1s0x886470384b88e639:0xbb28fed3e986bb54"
+    }
+  }
+}

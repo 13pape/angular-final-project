@@ -2,7 +2,7 @@
 	  		
 <!-- Button trigger modal -->
 <div class="initial-button">
-	<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Login or Register</button>
+	<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" ng-show="!isAuthenticated()">Login or Register</button>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -10,13 +10,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Mexican Restaurants</h4>
       </div>
       <div class="modal-body">
-       		<div>Email: <input type="text" autofocus="true" ng-model="account.email" /></div>
-	  		<div>Password: <input type="password" ng-model="account.password" /></div>
-	  		<button ng-click="login()">Login</button>
-	  		<button ng-click="register()">Register</button>
+       		<div>Email: <input type="text" autofocus="true" class="form-control" ng-model="account.email" /></div>
+	  		<div>Password: <input type="password" class="form-control" ng-model="account.password" /></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-dismiss="modal" ng-click="login()">Login</button>
@@ -27,3 +25,7 @@
 </div>
 
 </section>
+
+<a class="btn btn-success btn-lg visible" href="#/restaurant" role="button" id="RListButton">Restaurant List</a>
+
+
